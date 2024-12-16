@@ -1,0 +1,14 @@
+[package]
+name = "xrand"
+version = "0.1.0"
+edition = "2021"
+description = "TGFSR is a random number generator based on the TGFSR algorithm."
+homepage = "https://github.com/skymavis/xrand"
+repository = "https://github.com/skymavis/xrand"
+
+[lib]
+name = "xrand"
+path = "src/lib.rs"
+
+
+[dependencies]
