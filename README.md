@@ -12,93 +12,7 @@ Multi-language implementation of the Twisted Generalized Feedback Shift Register
 #### Examples
 
 [[Typescript]()] [[Python]()] [[Rust]()] [[Go]()]
-
-
-## Instalation (TBU)
-
-### Typescript
-
-```bash
-bun i @skymavis/xrand
-```
-
-### Python
-
-```bash
-pip install xrand
-```
-
-### Go
-
-```bash
-go get github.com/maxvis-x/xrand
-```
-
-### Rust
-
-Add this to your `Cargo.toml`:
-
-```bash
-[dependencies]
-xrand = "0.1.0"
-```
-
-## Usage
-
-### Typescript
-
-```ts
-import { TGFSR } from "xrand";
-
-// Example: Random shuffle for a card game
-const generator = new TGFSR(12345);
-const cards = ["Ace", "King", "Queen", "Jack"];
-cards.sort(() => (generator.next() % 2) - 0.5);
-console.log("Shuffled cards:", cards);
-```
-
-### Python
-
-```python
-from xrand import TGFSR
-
-# Example: Random item drop for a game
-generator = TGFSR(seed=12345)
-item = ["sword", "shield", "potion"]
-print("Item drop:", item[generator.next() % len(item)])
-```
-
-### Go
-
-```go
-package main
-
-import (
-    "fmt"
-    "github.com/skymavis/xrand"
-)
-
-// Example: Random delays for an app animation
-func main() {
-    generator := xrand.NewTGFSR(12345)
-    fmt.Printf("Random delay: %dms\n", generator.Next()%500+100)
-}
-```
-
-### Rust
-
-Add this to your `Cargo.toml`:
-
-```rust
-use xrand::TGFSR;
-
-// Example: Procedural generation for a game
-fn main() {
-    let mut generator = TGFSR::new(12345);
-    let terrain = ["grass", "water", "mountain"];
-    println!("Generated terrain: {}", terrain[generator.next() as usize % terrain.len()]);
-}
-```
+ 
 
 ## Use Cases
 
@@ -106,10 +20,10 @@ fn main() {
 
 In Axie Classic Season 6, the Raffle event used `xrand` to pick winners based on their ticket number.
 
-[[Visit site](https://classic-raffle.axiedao.org/)]
+[[Visit site](https://classic-raffle.axiedao.org/)][[Simulation](https://classic-raffle.axiedao.org/simulation)]
 ![Axie Classic Raffle](/assets/usecase-classic.webp)
 
 ### Nio's Nightmare Raffle event
 
-[[Visit site](https://nioraffle.axiedao.org/)]
+[[Visit site](https://nioraffle.axiedao.org/)][[Simulation](https://nioraffle.axiedao.org/simulation)]
 ![Nio's Nightmare Raffle](/assets/usecase-nio.webp)
