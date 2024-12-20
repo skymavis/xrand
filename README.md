@@ -14,7 +14,7 @@ Multi-language implementation of the Twisted Generalized Feedback Shift Register
 [[Typescript]()] [[Python]()] [[Rust]()] [[Go]()]
 
 
-## Instalation
+## Instalation (TBU)
 
 ### Typescript
 
